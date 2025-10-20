@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Task 1: Styled Name in Top-Left -->
+    <header>
+        <div class="header-container">
+            <h1 class="styled-name">John Developer</h1>
+            
+            <!-- Task 2: Navigation Bar -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#recommendations">Recommendations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Task 3: About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/200" alt="Profile Picture" class="profile-img">
+                <div class="about-text">
+                    <h3>John Developer</h3>
+                    <p>I'm a passionate full-stack developer with 5 years of experience in creating web applications. 
+                    I specialize in JavaScript, React, and Node.js. I love solving complex problems and building 
+                    user-friendly interfaces. When I'm not coding, you can find me exploring new technologies 
+                    or contributing to open-source projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 4: Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <h3>HTML5</h3>
+                    <p>Advanced proficiency in semantic HTML</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <h3>CSS3</h3>
+                    <p>Expert in responsive design and animations</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js skill-icon"></i>
+                    <h3>JavaScript</h3>
+                    <p>Strong ES6+ and async programming skills</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react skill-icon"></i>
+                    <h3>React</h3>
+                    <p>Building complex SPAs with React ecosystem</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js skill-icon"></i>
+                    <h3>Node.js</h3>
+                    <p>Backend development with Express.js</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3>Database</h3>
+                    <p>MongoDB, MySQL, PostgreSQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 5: Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-stack e-commerce solution built with React and Node.js, featuring user authentication, 
+                    payment integration, and inventory management.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Task Management App</h3>
+                    <p>A collaborative task management application with real-time updates using Socket.io, 
+                    drag-and-drop functionality, and team collaboration features.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Weather Dashboard</h3>
+                    <p>A responsive weather dashboard that displays real-time weather data, forecasts, 
+                    and interactive maps using OpenWeather API and Chart.js.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 6 & 7: Recommendations Section -->
+    <section id="recommendations" class="recommendations-section">
+        <div class="container">
+            <h2>Recommendations</h2>
+            <div class="recommendations-list" id="recommendationsList">
+                <div class="recommendation-card">
+                    <p class="recommendation-text">"John is an exceptional developer who consistently delivers high-quality code. 
+                    His problem-solving skills and attention to detail make him a valuable team member."</p>
+                    <p class="recommender-name">- Sarah Johnson, Senior Developer at TechCorp</p>
+                </div>
+                <div class="recommendation-card">
+                    <p class="recommendation-text">"Working with John was a great experience. He's proactive, communicates well, 
+                    and always meets deadlines. I highly recommend him for any development project."</p>
+                    <p class="recommender-name">- Mike Chen, Project Manager at WebSolutions</p>
+                </div>
+                <div class="recommendation-card">
+                    <p class="recommendation-text">"John's technical expertise and collaborative approach helped our team 
+                    successfully launch our product on time. He's a true professional."</p>
+                    <p class="recommender-name">- Emily Rodriguez, CEO at StartupXYZ</p>
+                </div>
+            </div>
+
+            <!-- Add Recommendation Form -->
+            <div class="add-recommendation">
+                <h3>Add a Recommendation</h3>
+                <form id="recommendationForm">
+                    <div class="form-group">
+                        <label for="recommenderName">Your Name:</label>
+                        <input type="text" id="recommenderName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="recommenderTitle">Your Title/Company:</label>
+                        <input type="text" id="recommenderTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="recommendationText">Recommendation:</label>
+                        <textarea id="recommendationText" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Recommendation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 8: Home Icon -->
+    <a href="#top" class="home-icon" title="Back to Top">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <!-- Task 9: Popup Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <i class="fas fa-check-circle success-icon"></i>
+                <h2>Thank You!</h2>
+                <p>Your recommendation has been successfully submitted.</p>
+                <button class="modal-btn">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
